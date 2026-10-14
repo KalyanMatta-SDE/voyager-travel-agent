@@ -7,6 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from metrics.token_tracker import TokenTrackingCallback
 
+from . import inventory
 from .base_agent import BaseAgent
 
 DESTINATIONS_DB = Path(__file__).parent.parent / "data" / "knowledge_base" / "destinations.json"
@@ -98,36 +99,58 @@ class ExperienceAgent(BaseAgent):
                 )
         location_focus = " ".join(location_focus_parts)
 
-        chain = self.prompt | self.llm
-        response = await chain.ainvoke({
-            "destination": destination,
-            "interests": ", ".join(interests) if interests else "beaches, local food, culture",
-            "activity_budget": round(activity_budget),
-            "duration_days": duration,
-            "location_focus": location_focus,
-        })
+        async def _generate() -> dict:
+            chain = self.prompt | self.llm
+            response = await chain.ainvoke({
+                "destination": destination,
+                "interests": ", ".join(interests) if interests else "beaches, local food, culture",
+                "activity_budget": round(activity_budget),
+                "duration_days": duration,
+                "location_focus": location_focus,
+            })
 
-        try:
-            import re
-            text = response.content
-            json_match = re.search(r'\[.*\]', text, re.DOTALL)
-            experiences = json.loads(json_match.group()) if json_match else []
-        except Exception:
-            experiences = []
-        if not experiences:
-            experiences = self._fallback_experiences(destination, interests)
+            try:
+                import re
+                text = response.content
+                json_match = re.search(r'\[.*\]', text, re.DOTALL)
+                experiences = json.loads(json_match.group()) if json_match else []
+            except Exception:
+                experiences = []
+            if not experiences:
+                experiences = self._fallback_experiences(destination, interests)
 
-        # Attach real coordinates to each experience from its `location` string
-        # so the hub can emit a non-null activity_centroid (typed constraint) and
-        # the hotel agent can distance-match against real inventory.
-        #
-        # Live modes ONLY (capture/replay): in mock mode we stay fully offline
-        # and deterministic — geocoding would leak real-world coordinates (and
-        # garbage like "City Center" → Newport News, VA) into the centroid,
-        # switching mock hotel selection from the always-satisfiable string hint
-        # path to distance matching, which mock hotels can't satisfy.
+            # Attach real coordinates to each experience from its `location` string
+            # so the hub can emit a non-null activity_centroid (typed constraint) and
+            # the hotel agent can distance-match against real inventory.
+            #
+            # Live modes ONLY (capture/replay): in mock mode we stay fully offline
+            # and deterministic — geocoding would leak real-world coordinates (and
+            # garbage like "City Center" → Newport News, VA) into the centroid,
+            # switching mock hotel selection from the always-satisfiable string hint
+            # path to distance matching, which mock hotels can't satisfy.
+            if self._inventory_mode() in ("capture", "replay"):
+                await self._geocode_experiences(experiences)
+            return {"experiences": experiences}
+
         if self._inventory_mode() in ("capture", "replay"):
-            await self._geocode_experiences(experiences)
+            # The experience list is LLM output, and it drives two of the three
+            # detectors (location_mismatch, weather_activity_mismatch). Record it
+            # with the API fixtures so a replay reuses it instead of regenerating
+            # it; regenerating it was the source of run-to-run conflict variance.
+            query_id = inventory.inventory_query_id(
+                "experiences",
+                destination=destination,
+                interests=sorted(interests),
+                duration_days=duration,
+                activity_budget=round(activity_budget),
+                location_focus=location_focus,
+            )
+            recorded = await inventory.replay_or_record(
+                "experiences", query_id, _generate, run_label="experience-capture",
+            )
+            experiences = recorded.get("experiences", [])
+        else:
+            experiences = (await _generate())["experiences"]
 
         if context:
             beaches = context.get("top_beaches", [])

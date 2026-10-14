@@ -101,6 +101,13 @@ class BaseAgent(ABC):
 
         from agents.inventory import load_manifest
         manifest = load_manifest()
+        # An explicit anchor makes replay independent of the machine's timezone.
+        # Without it the anchor is the first fixture's capture time converted to
+        # *local* time, which lands on a different calendar day east of the
+        # capture timezone and makes every fixture lookup miss.
+        anchor = manifest.get("replay_anchor_date")
+        if anchor:
+            return date.fromisoformat(anchor)
         fixtures = manifest.get("fixtures") or {}
         for meta in fixtures.values():
             ts = meta.get("captured_at")

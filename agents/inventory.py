@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections.abc import Awaitable, Callable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -106,6 +107,40 @@ def replay(source: str, query_id: str, *, verify_hash: bool = True) -> dict[str,
             raise ValueError(
                 f"Fixture hash mismatch for {path.name}: manifest={recorded}, file={actual}"
             )
+    return payload
+
+
+def has_fixture(source: str, query_id: str) -> bool:
+    return (_fixtures_dir() / f"{query_id}_{source}.json").exists()
+
+
+async def replay_or_record(
+    source: str,
+    query_id: str,
+    produce: Callable[[], Awaitable[Any]],
+    *,
+    run_label: str,
+) -> Any:
+    """Return the recorded payload for ``query_id``, or produce and record it.
+
+    - capture: always call ``produce`` and record the result.
+    - replay:  read the fixture. If it is missing and
+               ``replay_record_missing`` is set, call ``produce`` once and
+               record it; otherwise fail exactly like :func:`replay`.
+    - mock:    call ``produce`` and record nothing.
+
+    This is how LLM-generated research outputs (parsed intent, experiences)
+    become part of the replay dataset, so a replay re-uses them instead of
+    regenerating them on every run.
+    """
+    mode = get_settings().inventory_mode
+    if mode == "replay":
+        if has_fixture(source, query_id) or not get_settings().replay_record_missing:
+            return replay(source, query_id)
+    payload = await produce()
+    if mode in ("capture", "replay"):
+        capture(source, payload, query_id, run_label=run_label)
+        return replay(source, query_id)  # return exactly what was recorded (sanitized)
     return payload
 
 
