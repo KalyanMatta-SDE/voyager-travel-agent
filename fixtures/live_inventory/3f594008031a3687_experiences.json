@@ -1,0 +1,48 @@
+{
+  "experiences": [
+    {
+      "name": "Island Hopping Tour around Phi Phi Islands",
+      "description": "Explore the stunning Phi Phi archipelago by speedboat, visiting Maya Bay, Monkey Beach, and crystal-clear lagoons. Snorkel among vibrant coral reefs and enjoy breathtaking limestone karst scenery made famous by 'The Beach'.",
+      "cost_usd": 45,
+      "category": "Island Hopping",
+      "best_time_of_day": "Morning",
+      "location": "Phi Phi Islands, Krabi Province",
+      "latitude": 7.7522403,
+      "longitude": 98.77664336667435
+    },
+    {
+      "name": "Patong Beach Sunset & Water Sports",
+      "description": "Spend the afternoon at Phuket's most famous beach enjoying jet skiing, parasailing, and paddleboarding. Stay for the golden sunset views over the Andaman Sea before the beach transforms into a vibrant evening scene.",
+      "cost_usd": 40,
+      "category": "Beach & Activities",
+      "best_time_of_day": "Afternoon",
+      "location": "Patong Beach, Phuket"
+    },
+    {
+      "name": "Bangkok Street Food Night Market Tour",
+      "description": "Dive into Bangkok's legendary street food scene at Yaowarat Road (Chinatown), sampling pad thai, mango sticky rice, grilled satay, tom yum soup, and fresh seafood from bustling roadside stalls and hawker carts.",
+      "cost_usd": 20,
+      "category": "Street Food",
+      "best_time_of_day": "Evening",
+      "location": "Yaowarat Road, Chinatown, Bangkok"
+    },
+    {
+      "name": "Koh Lanta Snorkeling & Beach Day",
+      "description": "Take a longtail boat to the pristine beaches of Koh Lanta, snorkeling at Hin Daeng coral reef and relaxing on the quiet white-sand shores of Klong Dao Beach. A more laid-back alternative to busier islands with equally stunning scenery.",
+      "cost_usd": 35,
+      "category": "Beach & Island Hopping",
+      "best_time_of_day": "Morning",
+      "location": "Koh Lanta, Krabi Province",
+      "latitude": 7.63692595,
+      "longitude": 99.09486124851497
+    },
+    {
+      "name": "Chiang Mai Night Bazaar Street Food Crawl",
+      "description": "Wander through Chiang Mai's famous Night Bazaar and Warorot Market sampling northern Thai specialties like khao soi (coconut curry noodles), sai oua (herb sausage), and crispy pork rinds while soaking in the vibrant local atmosphere.",
+      "cost_usd": 15,
+      "category": "Street Food & Culture",
+      "best_time_of_day": "Evening",
+      "location": "Night Bazaar District, Chiang Mai"
+    }
+  ]
+}

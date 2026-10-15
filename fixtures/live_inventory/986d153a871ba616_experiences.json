@@ -1,0 +1,44 @@
+{
+  "experiences": [
+    {
+      "name": "Hagia Sophia & Blue Mosque Exploration",
+      "description": "Visit the iconic Hagia Sophia, a UNESCO World Heritage Site that has served as a cathedral, mosque, and museum over 1,500 years. Then walk to the stunning Blue Mosque (Sultan Ahmed Mosque) with its six minarets and exquisite Iznik tile interior. Both sites are within walking distance and offer a profound glimpse into Byzantine and Ottoman history.",
+      "cost_usd": 17,
+      "category": "culture & history",
+      "best_time_of_day": "morning",
+      "location": "Sultanahmet district, Historic Peninsula"
+    },
+    {
+      "name": "Topkapi Palace & Imperial Harem Tour",
+      "description": "Explore the opulent Topkapi Palace, the administrative heart of the Ottoman Empire for nearly 400 years. Walk through the Imperial Harem, the Treasury housing the Topkapi Dagger and Spoonmaker's Diamond, and enjoy panoramic views of the Bosphorus. A guided tour brings the sultans' stories vividly to life.",
+      "cost_usd": 35,
+      "category": "history",
+      "best_time_of_day": "morning",
+      "location": "Sultanahmet district, Historic Peninsula"
+    },
+    {
+      "name": "Grand Bazaar & Spice Bazaar Food & Shopping Walk",
+      "description": "Wander through the Grand Bazaar, one of the world's oldest and largest covered markets with over 4,000 shops. Then head to the Egyptian Spice Bazaar to sample Turkish delight, dried fruits, saffron, and local spices. Engage with vendors, taste free samples, and soak in centuries of trading culture in a single walk.",
+      "cost_usd": 20,
+      "category": "local food & culture",
+      "best_time_of_day": "late morning",
+      "location": "Emin\u00f6n\u00fc & Beyaz\u0131t districts, Historic Peninsula"
+    },
+    {
+      "name": "Traditional Turkish Breakfast in Karak\u00f6y",
+      "description": "Indulge in a lavish Turkish breakfast spread (kahvalt\u0131) featuring olives, white cheese, sucuk (spiced sausage), menemen (egg dish), fresh bread, honey, clotted cream, and multiple teas. Karak\u00f6y's trendy caf\u00e9s offer authentic yet atmospheric settings where locals gather on weekend mornings, making it a true cultural ritual.",
+      "cost_usd": 18,
+      "category": "local food",
+      "best_time_of_day": "morning",
+      "location": "Karak\u00f6y district, Beyo\u011flu"
+    },
+    {
+      "name": "Bosphorus Sunset Cruise with Street Food Stop",
+      "description": "Board a public or private Bosphorus ferry to glide between Europe and Asia, passing Ottoman palaces, ancient fortresses, and waterfront mansions (yal\u0131s). After the cruise, stop at a Karak\u00f6y or Emin\u00f6n\u00fc street stall for a classic bal\u0131k ekmek (grilled fish sandwich) and a glass of ayran, a beloved local street food experience.",
+      "cost_usd": 25,
+      "category": "activity & local food",
+      "best_time_of_day": "evening",
+      "location": "Emin\u00f6n\u00fc Ferry Docks, Historic Peninsula"
+    }
+  ]
+}

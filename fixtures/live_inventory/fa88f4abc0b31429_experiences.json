@@ -1,0 +1,48 @@
+{
+  "experiences": [
+    {
+      "name": "Private Sunset Snorkeling Excursion",
+      "description": "Embark on a private guided snorkeling tour through vibrant coral reefs teeming with manta rays, sea turtles, and tropical fish. A dedicated boat takes you and your partner to secluded reef spots away from crowds, with champagne served on board as the sun dips below the horizon.",
+      "cost_usd": 120,
+      "category": "Activity / Romance",
+      "best_time_of_day": "Late Afternoon",
+      "location": "North Mal\u00e9 Atoll, Maldives",
+      "latitude": 4.437813800000001,
+      "longitude": 73.53966432958072
+    },
+    {
+      "name": "Underwater Restaurant Dining Experience",
+      "description": "Enjoy an intimate candlelit dinner surrounded by panoramic views of the ocean floor at one of the world's most iconic underwater restaurants. Watch reef sharks and colorful fish glide past as you savor a curated multi-course seafood menu \u2014 a truly unforgettable honeymoon moment.",
+      "cost_usd": 150,
+      "category": "Food / Romance",
+      "best_time_of_day": "Evening",
+      "location": "Rangali Island, South Ari Atoll, Maldives"
+    },
+    {
+      "name": "Overwater Bungalow Couples Spa Retreat",
+      "description": "Indulge in a signature couples massage and spa treatment in an overwater pavilion with a glass floor revealing the turquoise lagoon below. Treatments incorporate traditional Maldivian coconut and frangipani oils, leaving you both completely rejuvenated in a luxurious, serene setting.",
+      "cost_usd": 100,
+      "category": "Luxury / Romance",
+      "best_time_of_day": "Morning",
+      "location": "Velaa Private Island, Noonu Atoll, Maldives"
+    },
+    {
+      "name": "Sandbank Picnic & Snorkeling Adventure",
+      "description": "Be whisked away by speedboat to a pristine, uninhabited sandbank in the middle of the Indian Ocean. Enjoy a gourmet picnic basket with local Maldivian delicacies and tropical fruits, then snorkel the surrounding reef rich with marine life \u2014 the ultimate private island fantasy for honeymooners.",
+      "cost_usd": 80,
+      "category": "Beaches / Activity",
+      "best_time_of_day": "Midday",
+      "location": "South Mal\u00e9 Atoll, Maldives",
+      "latitude": 3.9690660500000003,
+      "longitude": 73.43112736858927
+    },
+    {
+      "name": "Maldivian Cultural Village Tour & Cooking Class",
+      "description": "Visit a traditional local island to explore Maldivian heritage, including historic mosques, handcrafted lacquerwork, and fishing culture. Join a local family for an authentic cooking class preparing dishes like mas huni (tuna and coconut) and garudhiya fish soup, gaining a rare cultural insight beyond the resort bubble.",
+      "cost_usd": 50,
+      "category": "Culture / Food",
+      "best_time_of_day": "Morning",
+      "location": "Maafushi Island, South Mal\u00e9 Atoll, Maldives"
+    }
+  ]
+}

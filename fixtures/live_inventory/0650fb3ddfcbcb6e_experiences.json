@@ -1,0 +1,44 @@
+{
+  "experiences": [
+    {
+      "name": "Sunrise Yoga at Campuhan Ridge Walk",
+      "description": "Join an open-air yoga session overlooking the lush Campuhan Ridge, followed by a peaceful walk along the scenic ridge trail. A perfect blend of mindfulness and nature immersion in Ubud's spiritual heartland.",
+      "cost_usd": 15,
+      "category": "yoga",
+      "best_time_of_day": "Early Morning",
+      "location": "Campuhan Ridge, Ubud"
+    },
+    {
+      "name": "Seminyak Beach Sunset Session",
+      "description": "Relax on one of Bali's most beautiful beaches, known for its golden sunsets. Rent a sun lounger, take a dip in the warm Indian Ocean, and enjoy the vibrant beach club atmosphere as the sun dips below the horizon.",
+      "cost_usd": 20,
+      "category": "beaches",
+      "best_time_of_day": "Late Afternoon",
+      "location": "Seminyak Beach, Seminyak"
+    },
+    {
+      "name": "Beachfront Yoga Retreat Class in Canggu",
+      "description": "Attend a drop-in yoga class at one of Canggu's renowned beachfront studios like Dojo or The Practice. Classes cater to all levels and are set in stunning open-air pavilions just steps from the surf.",
+      "cost_usd": 12,
+      "category": "yoga",
+      "best_time_of_day": "Morning",
+      "location": "Canggu Beach, Canggu"
+    },
+    {
+      "name": "Snorkeling at Padang Bai Blue Lagoon",
+      "description": "Explore the crystal-clear turquoise waters of Blue Lagoon Beach, one of Bali's best snorkeling spots. Discover vibrant coral reefs, tropical fish, and sea turtles in a sheltered and calm bay perfect for all skill levels.",
+      "cost_usd": 25,
+      "category": "beaches",
+      "best_time_of_day": "Morning",
+      "location": "Blue Lagoon Beach, Padang Bai"
+    },
+    {
+      "name": "Traditional Balinese Cooking Class & Temple Visit",
+      "description": "Start with a guided visit to a local morning market, then learn to prepare authentic Balinese dishes like satay lilit and black rice pudding. Many classes include a brief visit to a nearby temple for cultural context.",
+      "cost_usd": 35,
+      "category": "culture",
+      "best_time_of_day": "Morning",
+      "location": "Ubud Town Center, Ubud"
+    }
+  ]
+}

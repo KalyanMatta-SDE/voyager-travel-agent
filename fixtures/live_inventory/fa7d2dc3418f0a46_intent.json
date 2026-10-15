@@ -1,0 +1,19 @@
+{
+  "intent": {
+    "destination": "Costa Rica",
+    "origin": "Miami",
+    "budget_usd": 2500.0,
+    "duration_days": null,
+    "travel_month": "February",
+    "travel_year": 2027,
+    "interests": [
+      "eco-adventure",
+      "zip-lining",
+      "wildlife"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Costa Rica eco-adventure, $2500, zip-lining and wildlife, February 2026 from Miami"
+  }
+}

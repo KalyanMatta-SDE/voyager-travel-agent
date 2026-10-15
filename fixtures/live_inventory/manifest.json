@@ -552,6 +552,198 @@
       "fixture_hash": "30664fb6eaa9d1cb718173ea3a0e33c45f3ace45c11411af2ad94a296e7662eb",
       "sanitized": true,
       "run_label": "flight-capture"
+    },
+    "efd2b223cbcf3708_intent": {
+      "query_id": "efd2b223cbcf3708",
+      "captured_at": "2026-10-14T23:44:42.555543+00:00",
+      "source": "intent",
+      "fixture_hash": "250e8c878fbadc8501be9e4468bbf2c551e79089c23de9fa02cd9baa47d9e4f9",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "bdea5e793b2a295f_experiences": {
+      "query_id": "bdea5e793b2a295f",
+      "captured_at": "2026-10-14T23:44:58.219899+00:00",
+      "source": "experiences",
+      "fixture_hash": "f294f11667ba5f7a00be44199e04397e59d9c56fa531ee4802e9e2e836e17ddc",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "2db397fdaaa5e658_intent": {
+      "query_id": "2db397fdaaa5e658",
+      "captured_at": "2026-10-14T23:51:26.207775+00:00",
+      "source": "intent",
+      "fixture_hash": "965edd615194a87a6450ffb1a1d58c73a7ec7f2007cb5409cd71396ac5b7c93a",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "fa88f4abc0b31429_experiences": {
+      "query_id": "fa88f4abc0b31429",
+      "captured_at": "2026-10-14T23:51:43.786908+00:00",
+      "source": "experiences",
+      "fixture_hash": "d017dda1ad7e066728065f315463c7882eed533884e3c73dcbd5c49a9249c42c",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "ea93a40499fd90ec_intent": {
+      "query_id": "ea93a40499fd90ec",
+      "captured_at": "2026-10-14T23:52:59.606151+00:00",
+      "source": "intent",
+      "fixture_hash": "5b915173a9434da9c235110414e7a5fbcdf03bf96565649385ae10b06424eb65",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "0650fb3ddfcbcb6e_experiences": {
+      "query_id": "0650fb3ddfcbcb6e",
+      "captured_at": "2026-10-14T23:53:12.689796+00:00",
+      "source": "experiences",
+      "fixture_hash": "5055b264db6adc392c79f9999b35ce92b25c676af37d9f5601a8ad562efac1ff",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "4327bfae2b611198_intent": {
+      "query_id": "4327bfae2b611198",
+      "captured_at": "2026-10-14T23:54:14.469599+00:00",
+      "source": "intent",
+      "fixture_hash": "4265b8bfc35e148407ebcb4ed024d68a90e597b94cb6ade74a63924fb21fe1ec",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "3f594008031a3687_experiences": {
+      "query_id": "3f594008031a3687",
+      "captured_at": "2026-10-14T23:54:29.457887+00:00",
+      "source": "experiences",
+      "fixture_hash": "07b21eb940efe2457d3c0ca2eee5f355e54281f66875536e65314c9a11d803e6",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "d428e3ba2af23380_intent": {
+      "query_id": "d428e3ba2af23380",
+      "captured_at": "2026-10-14T23:55:48.984072+00:00",
+      "source": "intent",
+      "fixture_hash": "397e160c6983b0b4a0b26c11e47aca06393a0de52bef0d0d6f685d43b74b8dbd",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "5d1cdcf276bc69df_experiences": {
+      "query_id": "5d1cdcf276bc69df",
+      "captured_at": "2026-10-14T23:56:03.833324+00:00",
+      "source": "experiences",
+      "fixture_hash": "85d8a15ad8aa4111f24cb03fcc51f8fffcfd93c65bbf96e478fefe92673be1fe",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "61fa1fc5bc2456ff_intent": {
+      "query_id": "61fa1fc5bc2456ff",
+      "captured_at": "2026-10-14T23:57:05.420830+00:00",
+      "source": "intent",
+      "fixture_hash": "6a4ea1542483b9762e06c62ebd621fb2c428cec8189cca46aee8ee30920ad4dd",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "520a7978d8a63690_experiences": {
+      "query_id": "520a7978d8a63690",
+      "captured_at": "2026-10-14T23:57:21.060351+00:00",
+      "source": "experiences",
+      "fixture_hash": "d9f777223045b64af5dc98a2dfcf8a9ea0c57250c03d08ae442007214553fdf2",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "40f13aabeabf6bbd_intent": {
+      "query_id": "40f13aabeabf6bbd",
+      "captured_at": "2026-10-15T00:04:27.565793+00:00",
+      "source": "intent",
+      "fixture_hash": "652c9e9d4e616927a4f49b2c9cec4864e3afb34de92ca69cf01f28e9f55fd9e9",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "e86a744150c6009f_experiences": {
+      "query_id": "e86a744150c6009f",
+      "captured_at": "2026-10-15T00:04:42.681833+00:00",
+      "source": "experiences",
+      "fixture_hash": "65e3317bd5232c8ff8a85d941314a650a8e6ed473359551432e4c72b7569730d",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "f1d1bb124a36b631_intent": {
+      "query_id": "f1d1bb124a36b631",
+      "captured_at": "2026-10-15T00:11:28.904232+00:00",
+      "source": "intent",
+      "fixture_hash": "86f4f717bc51d0332eff16484630255542c760370b0769ac9f3cab0773ec1dc9",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "986d153a871ba616_experiences": {
+      "query_id": "986d153a871ba616",
+      "captured_at": "2026-10-15T00:11:46.998172+00:00",
+      "source": "experiences",
+      "fixture_hash": "283385792c9bfee89375bac72b3db8274261037f2f0f77b88924d656c5143cd2",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "3c09638c00e957ca_intent": {
+      "query_id": "3c09638c00e957ca",
+      "captured_at": "2026-10-15T00:19:18.258054+00:00",
+      "source": "intent",
+      "fixture_hash": "7d667021f83897473ae667b386b5b0b5eed5a9fa7838af92b1d335ba9f32db2a",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "fc341c291559edd1_experiences": {
+      "query_id": "fc341c291559edd1",
+      "captured_at": "2026-10-15T00:19:32.282816+00:00",
+      "source": "experiences",
+      "fixture_hash": "9f54c00de9be85c2d561086a9f559411b06571cf1f686f88b3aa8b7e957905ac",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "a994a4e42719fad7_intent": {
+      "query_id": "a994a4e42719fad7",
+      "captured_at": "2026-10-15T00:20:24.512244+00:00",
+      "source": "intent",
+      "fixture_hash": "6d7fb202b5d0deadde80d68f15baa8d2c7a65ccdeb4f3563d649cf661a1bb8b7",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "45e28bb5d49adaa9_experiences": {
+      "query_id": "45e28bb5d49adaa9",
+      "captured_at": "2026-10-15T00:20:42.312289+00:00",
+      "source": "experiences",
+      "fixture_hash": "aad14a3e2957988873c74ae1c1d3d8804e27f38a17ac2bf97777623425592aa2",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "0c3b6a50dc7a878a_intent": {
+      "query_id": "0c3b6a50dc7a878a",
+      "captured_at": "2026-10-15T00:27:56.722126+00:00",
+      "source": "intent",
+      "fixture_hash": "23097a64135705f3be566bf0e097f004f2affb5ba824a9c578ff55bdd3db151f",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "d036b1774e48b4a6_experiences": {
+      "query_id": "d036b1774e48b4a6",
+      "captured_at": "2026-10-15T00:28:10.794532+00:00",
+      "source": "experiences",
+      "fixture_hash": "15fb134fe8577bc453de3f52544fa8a9e76a010ef45520bf997dfb786058c918",
+      "sanitized": true,
+      "run_label": "experience-capture"
+    },
+    "fa7d2dc3418f0a46_intent": {
+      "query_id": "fa7d2dc3418f0a46",
+      "captured_at": "2026-10-15T00:35:03.242139+00:00",
+      "source": "intent",
+      "fixture_hash": "9fa58eda774fd5e16dbd5b8092d474556318f5f0185393c6b92bfd4072a9b026",
+      "sanitized": true,
+      "run_label": "intent-capture"
+    },
+    "3e261ba2caeefe0f_experiences": {
+      "query_id": "3e261ba2caeefe0f",
+      "captured_at": "2026-10-15T00:35:17.571097+00:00",
+      "source": "experiences",
+      "fixture_hash": "0651dd8a4df769cd265d02bb9e0e0640cf305a3467b9a1b42c71f6dae7b69ec3",
+      "sanitized": true,
+      "run_label": "experience-capture"
     }
   }
 }

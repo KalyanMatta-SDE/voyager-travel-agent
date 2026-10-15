@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "Portugal Algarve",
+    "origin": "London",
+    "budget_usd": 2200.0,
+    "duration_days": null,
+    "travel_month": "September",
+    "travel_year": 2026,
+    "interests": [
+      "beaches",
+      "wine tasting"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Portugal Algarve, $2200, beach holiday with wine tasting, September 2026 from London"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "intent": {
+    "destination": "Tokyo, Japan",
+    "origin": "SFO",
+    "budget_usd": 3000.0,
+    "duration_days": null,
+    "travel_month": "April",
+    "travel_year": 2026,
+    "interests": [
+      "local food",
+      "tech culture",
+      "culture"
+    ],
+    "group_size": 2,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Tokyo city break, $3000 for couple, food and tech culture, April 2026 from SFO"
+  }
+}

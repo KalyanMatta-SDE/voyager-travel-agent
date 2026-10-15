@@ -1,0 +1,46 @@
+{
+  "experiences": [
+    {
+      "name": "Monteverde Cloud Forest Zip-lining",
+      "description": "Soar through the misty cloud forest canopy on one of Costa Rica's most thrilling zip-line circuits. With over 13 cables and Tarzan swings, this eco-adventure offers breathtaking views of the forest and occasional wildlife sightings including toucans and howler monkeys.",
+      "cost_usd": 60,
+      "category": "eco-adventure",
+      "best_time_of_day": "Morning",
+      "location": "Monteverde, Puntarenas Province",
+      "latitude": 40.998922,
+      "longitude": 15.534157
+    },
+    {
+      "name": "Tortuguero Wildlife Canal Tour",
+      "description": "Glide through the jungle waterways of Tortuguero National Park by canoe or small boat. Spot caimans, river turtles, poison dart frogs, sloths, and over 300 bird species in one of Costa Rica's most biodiverse ecosystems. A must for wildlife enthusiasts.",
+      "cost_usd": 45,
+      "category": "wildlife",
+      "best_time_of_day": "Early Morning",
+      "location": "Tortuguero National Park, Lim\u00f3n Province"
+    },
+    {
+      "name": "Arenal Volcano Hanging Bridges Hike",
+      "description": "Walk through the rainforest canopy on a series of suspension bridges surrounding the iconic Arenal Volcano. This self-guided eco-adventure trail offers close-up encounters with exotic birds, monkeys, and tropical flora with stunning volcano views.",
+      "cost_usd": 30,
+      "category": "eco-adventure",
+      "best_time_of_day": "Morning",
+      "location": "Arenal Volcano National Park, Alajuela Province"
+    },
+    {
+      "name": "Manuel Antonio Wildlife Guided Nature Walk",
+      "description": "Explore Manuel Antonio National Park with a certified naturalist guide who uses high-powered scopes to reveal hidden sloths, white-faced capuchin monkeys, scarlet macaws, and iguanas. The park also features pristine beaches perfect for a post-hike swim.",
+      "cost_usd": 55,
+      "category": "wildlife",
+      "best_time_of_day": "Early Morning",
+      "location": "Manuel Antonio National Park, Puntarenas Province"
+    },
+    {
+      "name": "Corcovado Rainforest Eco-Trek",
+      "description": "Venture into one of the world's most biologically intense rainforests on a guided day trek through Corcovado National Park. Encounter tapirs, scarlet macaws, white-lipped peccaries, and possibly even a jaguar track. An unmatched bucket-list eco-adventure experience.",
+      "cost_usd": 55,
+      "category": "eco-adventure",
+      "best_time_of_day": "Morning",
+      "location": "Corcovado National Park, Osa Peninsula"
+    }
+  ]
+}

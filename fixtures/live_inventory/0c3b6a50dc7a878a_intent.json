@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "New Zealand South Island",
+    "origin": null,
+    "budget_usd": 4000.0,
+    "duration_days": null,
+    "travel_month": "November",
+    "travel_year": 2026,
+    "interests": [
+      "hiking",
+      "bungee jumping"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "New Zealand South Island, $4000, hiking and bungee jumping, November 2026"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "experiences": [
+    {
+      "name": "Gyeongbokgung Palace & Hanbok Experience",
+      "description": "Explore the grand Joseon-era Gyeongbokgung Palace while dressed in a traditional Hanbok rental. Wearing Hanbok grants free palace entry, and you can stroll through the historic grounds, visit the National Folk Museum inside, and capture stunning photos at the iconic palace gates.",
+      "cost_usd": 10,
+      "category": "Culture",
+      "best_time_of_day": "Morning",
+      "location": "Gyeongbokgung, Jongno-gu"
+    },
+    {
+      "name": "Gwangjang Market Street Food Tour",
+      "description": "Dive into Seoul's oldest traditional market and feast on iconic Korean street foods including bindaetteok (mung bean pancakes), mayak gimbap (addictive mini rice rolls), tteokbokki, and fresh yukhoe (beef tartare). A true sensory immersion into local food culture beloved by Seoulites for generations.",
+      "cost_usd": 25,
+      "category": "Local Food",
+      "best_time_of_day": "Afternoon",
+      "location": "Gwangjang Market, Jongno-gu"
+    },
+    {
+      "name": "K-Pop Idol Dance Class",
+      "description": "Take a professional K-pop dance lesson at one of Hongdae's popular dance studios. Learn choreography from trending idol groups taught by experienced instructors. A hands-on way to experience the K-culture phenomenon that has taken the world by storm, popular with both locals and tourists.",
+      "cost_usd": 35,
+      "category": "K-Culture",
+      "best_time_of_day": "Afternoon",
+      "location": "Hongdae, Mapo-gu",
+      "latitude": 37.553192,
+      "longitude": 126.9214502
+    },
+    {
+      "name": "Bukchon Hanok Village & Traditional Tea Ceremony",
+      "description": "Wander through the beautifully preserved alleyways of Bukchon Hanok Village, home to hundreds of traditional Korean wooden houses. Follow up with a serene traditional tea ceremony at a local teahouse, learning about Korean tea culture, etiquette, and the art of mindful preparation.",
+      "cost_usd": 20,
+      "category": "Culture",
+      "best_time_of_day": "Morning",
+      "location": "Bukchon Hanok Village, Jongno-gu"
+    },
+    {
+      "name": "Myeongdong Night Food Crawl & K-Beauty Shopping",
+      "description": "Experience Seoul's most vibrant night street food scene in Myeongdong, sampling lobster skewers, tornado potatoes, Korean corn dogs, and hotteok (sweet pancakes). Explore the dense cluster of K-beauty flagship stores from brands like Innisfree, Etude House, and Olive Young for affordable skincare hauls.",
+      "cost_usd": 50,
+      "category": "K-Culture",
+      "best_time_of_day": "Evening",
+      "location": "Myeongdong, Jung-gu",
+      "latitude": 35.0982487,
+      "longitude": 128.7275632
+    }
+  ]
+}

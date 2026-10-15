@@ -1,0 +1,44 @@
+{
+  "experiences": [
+    {
+      "name": "Praia da Marinha Coastal Walk & Swim",
+      "description": "Explore one of the Algarve's most stunning beaches, known for its dramatic golden limestone cliffs, sea caves, and crystal-clear turquoise waters. Walk the clifftop trail and descend to the secluded cove for a swim.",
+      "cost_usd": 0,
+      "category": "beaches",
+      "best_time_of_day": "Morning",
+      "location": "Praia da Marinha, Lagoa"
+    },
+    {
+      "name": "Algarve Wine & Cheese Tasting Tour",
+      "description": "Join a guided tasting session at a local Algarve winery such as Quinta dos Vales, sampling regional wines including Negra Mole and Arinto varieties paired with local cheeses and charcuterie. Learn about the unique terroir of southern Portugal.",
+      "cost_usd": 55,
+      "category": "wine tasting",
+      "best_time_of_day": "Afternoon",
+      "location": "Quinta dos Vales, Est\u00f4mbar"
+    },
+    {
+      "name": "Benagil Sea Cave Kayak Tour",
+      "description": "Paddle by kayak through the iconic Benagil Cave, one of the world's most beautiful sea caves accessible only from the water. A guided tour takes you through hidden grottos and along the dramatic coastline with stunning rock formations.",
+      "cost_usd": 45,
+      "category": "activities",
+      "best_time_of_day": "Morning",
+      "location": "Benagil Beach, Lagoa"
+    },
+    {
+      "name": "Sunset Catamaran Cruise with Wine",
+      "description": "Sail along the Algarve coastline aboard a catamaran at golden hour, enjoying complimentary local wines and snacks while watching the sun dip below the Atlantic. The cruise passes sea caves, arches, and secluded beaches.",
+      "cost_usd": 75,
+      "category": "wine tasting",
+      "best_time_of_day": "Evening",
+      "location": "Portim\u00e3o Marina, Portim\u00e3o"
+    },
+    {
+      "name": "Praia de Meia Praia Beach Day",
+      "description": "Spend a relaxed day at one of the Algarve's longest and most beautiful sandy beaches stretching over 4 km. Rent a sun lounger, enjoy fresh seafood at a beachside restaurant, and take a dip in the calm Atlantic waters.",
+      "cost_usd": 20,
+      "category": "beaches",
+      "best_time_of_day": "Afternoon",
+      "location": "Praia de Meia Praia, Lagos"
+    }
+  ]
+}
