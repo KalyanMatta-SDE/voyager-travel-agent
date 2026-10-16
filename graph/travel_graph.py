@@ -67,6 +67,25 @@ async def intent_parser_node(state: TravelState) -> TravelState:
     return await _intent_parser.run(state)
 
 
+def _merge_results(merged: dict, results: list) -> None:
+    """Merge parallel agent results; record exceptions instead of dropping them.
+
+    ``asyncio.gather(return_exceptions=True)`` keeps one failing agent from
+    killing the round, but the exception must still be visible: a replay whose
+    fixture lookup failed otherwise looks like an agent that simply found
+    nothing (e.g. no flight, so no timing conflict).
+    """
+    errors: dict[str, str] = {}
+    for r in results:
+        if isinstance(r, dict):
+            errors.update(r.get("errors") or {})
+            merged.update(r)
+        elif isinstance(r, BaseException):
+            errors[f"{type(r).__name__}#{len(errors)}"] = str(r)
+    if errors:
+        merged["errors"] = errors
+
+
 async def research_round_1(state: TravelState) -> TravelState:
     """Round 1: Initial research — all 5 agents run in parallel."""
     state["collaboration_round"] = 1
@@ -82,9 +101,7 @@ async def research_round_1(state: TravelState) -> TravelState:
     )
 
     merged: TravelState = {"collaboration_round": 1}
-    for r in results:
-        if isinstance(r, dict):
-            merged.update(r)
+    _merge_results(merged, results)
 
     existing = state.get("run_metrics") or {}
     merged["run_metrics"] = {**existing, "round_1_duration_s": round(time.perf_counter() - t0, 2)}
@@ -147,9 +164,7 @@ async def research_round_2(state: TravelState) -> TravelState:
         results = await asyncio.gather(*tasks, return_exceptions=True) if tasks else []
 
     merged: TravelState = {"collaboration_round": 2}
-    for r in results:
-        if isinstance(r, dict):
-            merged.update(r)
+    _merge_results(merged, results)
 
     existing = state.get("run_metrics") or {}
     merged["run_metrics"] = {
@@ -213,9 +228,7 @@ async def research_round_3(state: TravelState) -> TravelState:
     results = await asyncio.gather(*tasks, return_exceptions=True) if tasks else []
 
     merged: TravelState = {"collaboration_round": 3}
-    for r in results:
-        if isinstance(r, dict):
-            merged.update(r)
+    _merge_results(merged, results)
 
     existing = state.get("run_metrics") or {}
     merged["run_metrics"] = {
@@ -279,9 +292,7 @@ async def retry_research_node(state: TravelState) -> TravelState:
         return_exceptions=True,
     )
     merged: TravelState = {}
-    for r in results:
-        if isinstance(r, dict):
-            merged.update(r)
+    _merge_results(merged, results)
     return merged
 
 

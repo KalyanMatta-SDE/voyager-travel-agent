@@ -1,0 +1,20 @@
+{
+  "intent": {
+    "destination": "Maldives",
+    "origin": null,
+    "budget_usd": 5000.0,
+    "duration_days": null,
+    "travel_month": "March",
+    "travel_year": 2027,
+    "interests": [
+      "snorkeling",
+      "luxury",
+      "romance",
+      "honeymoon"
+    ],
+    "group_size": 2,
+    "accommodation_preference": "resort",
+    "flexibility": "moderate",
+    "raw_query": "Maldives honeymoon for 2, $5000 budget, snorkeling and luxury resorts, March 2026"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "experiences": [
+    {
+      "name": "Kawarau Bridge Bungee Jump",
+      "description": "Take the plunge at the world's first commercial bungee jumping site, a 43-meter jump over the stunning Kawarau River gorge. This iconic experience is a must for thrill-seekers and includes a certificate and optional video package.",
+      "cost_usd": 135,
+      "category": "Adventure",
+      "best_time_of_day": "Morning",
+      "location": "Kawarau Gorge, Queenstown",
+      "latitude": -45.0559693,
+      "longitude": 169.1347146
+    },
+    {
+      "name": "Tongariro Alpine Crossing",
+      "description": "Hike one of New Zealand's most spectacular one-day walks, crossing volcanic terrain, emerald crater lakes, and dramatic lava fields. The 19.4km trail offers breathtaking panoramic views of the central North Island's volcanic plateau.",
+      "cost_usd": 45,
+      "category": "Hiking",
+      "best_time_of_day": "Early Morning",
+      "location": "Tongariro National Park, Ruapehu District"
+    },
+    {
+      "name": "Routeburn Track Day Hike",
+      "description": "Explore a section of the famous Routeburn Track, one of New Zealand's Great Walks. Trek through ancient beech forests, alpine meadows, and past glacial lakes with stunning views of the Darran Mountains and Fiordland.",
+      "cost_usd": 25,
+      "category": "Hiking",
+      "best_time_of_day": "Morning",
+      "location": "Mount Aspiring National Park, Glenorchy"
+    },
+    {
+      "name": "Nevis Bungy Jump",
+      "description": "Experience New Zealand's highest bungee jump at 134 meters above the Nevis River. Suspended in a pod over a remote canyon, this extreme freefall lasts 8.5 seconds and is reserved for the truly fearless adventurer.",
+      "cost_usd": 195,
+      "category": "Adventure",
+      "best_time_of_day": "Afternoon",
+      "location": "Nevis Valley, Queenstown"
+    },
+    {
+      "name": "Hooker Valley Track to Mueller Glacier",
+      "description": "Walk this stunning flat trail through Aoraki/Mount Cook National Park, crossing swing bridges over glacial streams and ending at the Hooker Glacier Lake with dramatic views of New Zealand's highest peak, Aoraki/Mount Cook.",
+      "cost_usd": 0,
+      "category": "Hiking",
+      "best_time_of_day": "Morning",
+      "location": "Aoraki/Mount Cook National Park, Mackenzie District"
+    }
+  ]
+}

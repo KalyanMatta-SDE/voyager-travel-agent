@@ -45,6 +45,10 @@ class Settings(BaseSettings):
     # ── Live inventory capture/replay ─────────────────────────────────────
     inventory_mode: Literal["mock", "capture", "replay"] = "mock"
     inventory_dir: str = "fixtures/live_inventory"
+    # Replay only: when a fixture is missing, produce it once (calling the LLM
+    # or API) and record it instead of failing (VOYAGER_REPLAY_RECORD_MISSING).
+    # Used to backfill fixtures for sources added after the original capture.
+    replay_record_missing: bool = False
 
 
 def effective_temperature(default_temperature: float) -> float:

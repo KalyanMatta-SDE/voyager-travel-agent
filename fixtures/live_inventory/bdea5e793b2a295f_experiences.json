@@ -1,0 +1,46 @@
+{
+  "experiences": [
+    {
+      "name": "Navagio Beach (Shipwreck Beach) Visit",
+      "description": "Take a boat tour to the iconic Navagio Beach on Zakynthos, one of Greece's most photographed beaches. The stunning turquoise waters, towering white cliffs, and the famous shipwreck make this an unforgettable experience. Boat tours depart regularly from Porto Vromi or Zakynthos Town.",
+      "cost_usd": 20,
+      "category": "beaches",
+      "best_time_of_day": "morning",
+      "location": "Navagio Beach, Zakynthos Island"
+    },
+    {
+      "name": "Athens Central Market Food Tour",
+      "description": "Explore the vibrant Varvakios Agora (Athens Central Market) and surrounding streets. Sample local cheeses, olives, cured meats, fresh seafood, and traditional Greek street food like souvlaki and spanakopita. Engage with local vendors and discover authentic Greek culinary culture.",
+      "cost_usd": 35,
+      "category": "local food",
+      "best_time_of_day": "morning",
+      "location": "Varvakios Agora, Monastiraki, Athens"
+    },
+    {
+      "name": "Elafonissi Beach Day Trip",
+      "description": "Visit the breathtaking Elafonissi Beach in southwestern Crete, famous for its pink-tinged sand and shallow crystal-clear lagoon. Wade through the warm, shallow waters to the small island and enjoy one of the most beautiful natural beaches in the Mediterranean.",
+      "cost_usd": 25,
+      "category": "beaches",
+      "best_time_of_day": "morning",
+      "location": "Elafonissi Beach, Chania, Crete"
+    },
+    {
+      "name": "Traditional Taverna Dinner in Plaka",
+      "description": "Enjoy a leisurely dinner at a traditional Greek taverna in the historic Plaka neighborhood beneath the Acropolis. Feast on mezedes like tzatziki, grilled octopus, moussaka, and fresh grilled fish paired with local wine or ouzo. Experience authentic Greek hospitality and cuisine.",
+      "cost_usd": 45,
+      "category": "local food",
+      "best_time_of_day": "evening",
+      "location": "Plaka District, Athens"
+    },
+    {
+      "name": "Mykonos Beach Club & Snorkeling at Paradise Beach",
+      "description": "Spend a day at the legendary Paradise Beach in Mykonos. Rent snorkeling gear to explore the clear Aegean waters, relax on the golden sand, and enjoy fresh seafood and Greek salads at the beachside tavernas. The vibrant atmosphere and stunning scenery make this a quintessential Greek island experience.",
+      "cost_usd": 60,
+      "category": "beaches",
+      "best_time_of_day": "afternoon",
+      "location": "Paradise Beach, Mykonos Island",
+      "latitude": -38.192086,
+      "longitude": 147.42110203084178
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "Rome",
+    "origin": "Chicago",
+    "budget_usd": 2500.0,
+    "duration_days": 7,
+    "travel_month": "June",
+    "travel_year": 2026,
+    "interests": [
+      "art",
+      "food"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Rome art and food trip, $2500, 7 days, June 2026 from Chicago"
+  }
+}

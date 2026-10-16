@@ -1,0 +1,19 @@
+{
+  "intent": {
+    "destination": "Thailand",
+    "origin": null,
+    "budget_usd": 1800.0,
+    "duration_days": null,
+    "travel_month": "October",
+    "travel_year": 2026,
+    "interests": [
+      "beaches",
+      "island hopping",
+      "street food"
+    ],
+    "group_size": 2,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Thailand beaches, $1800 for couple, mix of island hopping and street food, October 2026"
+  }
+}

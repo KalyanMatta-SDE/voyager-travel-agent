@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 from metrics.token_tracker import TokenTrackingCallback
 
+from . import inventory
 from .base_agent import BaseAgent
 
 
@@ -64,9 +65,23 @@ class IntentParserAgent(BaseAgent):
         if not query:
             return self._error_state("No user_query in state")
 
-        intent: TravelIntent = await self.chain.ainvoke({
-            "today": date.today().isoformat(),
-            "query": query,
-        })
+        async def _parse() -> dict:
+            intent: TravelIntent = await self.chain.ainvoke({
+                "today": date.today().isoformat(),
+                "query": query,
+            })
+            return {"intent": intent.model_dump()}
 
-        return {"intent": intent.model_dump(), "status": "intent_parsed"}
+        from config.settings import get_settings
+        if get_settings().inventory_mode in ("capture", "replay"):
+            # Parsed intent feeds every downstream query id and prompt. Record it
+            # per raw query so a replay starts from the same structured intent
+            # instead of re-parsing (which can vary, and depends on today's date).
+            query_id = inventory.inventory_query_id("intent", query=query)
+            parsed = await inventory.replay_or_record(
+                "intent", query_id, _parse, run_label="intent-capture",
+            )
+        else:
+            parsed = await _parse()
+
+        return {"intent": parsed["intent"], "status": "intent_parsed"}

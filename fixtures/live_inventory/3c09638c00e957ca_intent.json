@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "Barcelona",
+    "origin": "New York City",
+    "budget_usd": 2000.0,
+    "duration_days": 5,
+    "travel_month": "August",
+    "travel_year": 2026,
+    "interests": [
+      "architecture",
+      "nightlife"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Barcelona architecture and nightlife, $2000, 5 days, August 2026 from NYC"
+  }
+}

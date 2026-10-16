@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "Bali",
+    "origin": "Los Angeles",
+    "budget_usd": 1500.0,
+    "duration_days": null,
+    "travel_month": "July",
+    "travel_year": 2026,
+    "interests": [
+      "beaches",
+      "yoga"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Bali for solo traveler, $1500 budget, beaches and yoga, July 2026 from LA"
+  }
+}

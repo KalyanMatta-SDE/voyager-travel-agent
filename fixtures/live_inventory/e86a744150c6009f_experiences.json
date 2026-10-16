@@ -1,0 +1,48 @@
+{
+  "experiences": [
+    {
+      "name": "Vatican Museums & Sistine Chapel",
+      "description": "Explore one of the world's greatest art collections, culminating in Michelangelo's breathtaking Sistine Chapel ceiling. Book skip-the-line tickets in advance to maximize your time among thousands of masterpieces spanning centuries of artistic achievement.",
+      "cost_usd": 35,
+      "category": "art",
+      "best_time_of_day": "morning",
+      "location": "Vatican City, Borgo district",
+      "latitude": 41.9034912,
+      "longitude": 12.4528349
+    },
+    {
+      "name": "Trastevere Food & Wine Walking Tour",
+      "description": "Wander through the charming cobblestone streets of Trastevere sampling suppl\u00ec (fried rice balls), artisanal cheeses, cured meats, and local Roman wines. Join a guided small-group tour or explore independently hitting local trattorias and street food vendors beloved by Romans.",
+      "cost_usd": 65,
+      "category": "food",
+      "best_time_of_day": "evening",
+      "location": "Trastevere neighborhood"
+    },
+    {
+      "name": "Borghese Gallery Art Experience",
+      "description": "Discover Bernini's stunning sculptures and Caravaggio's dramatic paintings in this intimate and world-class gallery set within a beautiful villa. Entry is strictly timed and limited to 360 visitors per session, making it an exclusive and immersive art encounter.",
+      "cost_usd": 25,
+      "category": "art",
+      "best_time_of_day": "afternoon",
+      "location": "Villa Borghese, Parioli district",
+      "latitude": 26.470938150000002,
+      "longitude": -80.15520009906368
+    },
+    {
+      "name": "Pasta-Making Class in Prati",
+      "description": "Learn to hand-craft authentic Roman pasta dishes like cacio e pepe and carbonara under the guidance of a local nonna or professional chef. You'll leave with hands-on skills, a full belly, and recipes to recreate these classics back home.",
+      "cost_usd": 80,
+      "category": "food",
+      "best_time_of_day": "morning",
+      "location": "Prati neighborhood, near Vatican"
+    },
+    {
+      "name": "Campo de' Fiori Market & Ghetto Culinary Stroll",
+      "description": "Start at the vibrant Campo de' Fiori morning market to browse fresh produce, spices, and local specialties, then walk into the historic Jewish Ghetto to taste Roman-Jewish cuisine gems like carciofi alla giudia (fried artichokes) and ricotta-filled pastries at century-old bakeries.",
+      "cost_usd": 30,
+      "category": "food",
+      "best_time_of_day": "morning",
+      "location": "Campo de' Fiori & Jewish Ghetto, historic center"
+    }
+  ]
+}

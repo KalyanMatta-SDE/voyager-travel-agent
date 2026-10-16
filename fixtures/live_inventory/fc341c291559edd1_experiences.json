@@ -1,0 +1,44 @@
+{
+  "experiences": [
+    {
+      "name": "Sagrada Fam\u00edlia Guided Tour",
+      "description": "Explore Gaud\u00ed's iconic unfinished basilica with a skip-the-line guided tour. Marvel at the intricate facades, stunning stained glass, and towering spires that define Barcelona's skyline. Opt for tower access for panoramic city views.",
+      "cost_usd": 35,
+      "category": "architecture",
+      "best_time_of_day": "morning",
+      "location": "Eixample district, Barcelona"
+    },
+    {
+      "name": "Gothic Quarter & El Born Walking Tour",
+      "description": "Wander through Barcelona's medieval Gothic Quarter, discovering Roman ruins, the Barcelona Cathedral, and hidden plazas. Continue into the trendy El Born neighborhood filled with modernist buildings, boutiques, and street art.",
+      "cost_usd": 20,
+      "category": "culture",
+      "best_time_of_day": "afternoon",
+      "location": "Barri G\u00f2tic & El Born, Barcelona"
+    },
+    {
+      "name": "Park G\u00fcell & Gr\u00e0cia Neighborhood Exploration",
+      "description": "Visit Gaud\u00ed's whimsical Park G\u00fcell with its mosaic terraces and dragon staircase, then descend into the bohemian Gr\u00e0cia neighborhood to explore its charming squares, local tapas bars, and vibrant street life.",
+      "cost_usd": 15,
+      "category": "architecture",
+      "best_time_of_day": "morning",
+      "location": "Gr\u00e0cia district, Barcelona"
+    },
+    {
+      "name": "La Boqueria Market & Tapas Crawl",
+      "description": "Start at the legendary La Boqueria market to sample fresh local produce, jam\u00f3n, and pintxos. Then embark on a self-guided tapas crawl through El Raval and the Gothic Quarter, tasting patatas bravas, croquetas, and pan con tomate at traditional bodegas.",
+      "cost_usd": 45,
+      "category": "food",
+      "best_time_of_day": "afternoon",
+      "location": "La Boqueria, Las Ramblas, Barcelona"
+    },
+    {
+      "name": "Barceloneta Beach Sunset & Nightlife on Passeig Mar\u00edtim",
+      "description": "Relax on Barceloneta Beach at golden hour, then transition into Barcelona's legendary nightlife scene. Enjoy cocktails at rooftop beach bars, dance at open-air clubs along the Passeig Mar\u00edtim, and experience the city's world-famous after-midnight club culture.",
+      "cost_usd": 80,
+      "category": "nightlife",
+      "best_time_of_day": "evening",
+      "location": "Barceloneta Beach & Passeig Mar\u00edtim, Barcelona"
+    }
+  ]
+}

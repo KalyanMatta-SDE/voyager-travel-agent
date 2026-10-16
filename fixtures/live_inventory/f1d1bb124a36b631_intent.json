@@ -1,0 +1,19 @@
+{
+  "intent": {
+    "destination": "Istanbul",
+    "origin": null,
+    "budget_usd": 1800.0,
+    "duration_days": null,
+    "travel_month": "May",
+    "travel_year": 2026,
+    "interests": [
+      "culture",
+      "history",
+      "local food"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Istanbul cultural exploration, $1800 solo, historical sites and cuisine, May 2026"
+  }
+}

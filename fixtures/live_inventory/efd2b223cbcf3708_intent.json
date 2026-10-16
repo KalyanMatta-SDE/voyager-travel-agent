@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "destination": "Greece",
+    "origin": "New York City (NYC)",
+    "budget_usd": 2000.0,
+    "duration_days": null,
+    "travel_month": "June",
+    "travel_year": 2026,
+    "interests": [
+      "beaches",
+      "local food"
+    ],
+    "group_size": 1,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Greece under $2000, beaches and local food, summer 2026, flying from NYC"
+  }
+}

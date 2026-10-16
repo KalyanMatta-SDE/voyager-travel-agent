@@ -1,0 +1,19 @@
+{
+  "intent": {
+    "destination": "Seoul, South Korea",
+    "origin": "LAX",
+    "budget_usd": 2200.0,
+    "duration_days": null,
+    "travel_month": "December",
+    "travel_year": 2026,
+    "interests": [
+      "K-culture",
+      "local food",
+      "culture"
+    ],
+    "group_size": 2,
+    "accommodation_preference": null,
+    "flexibility": "moderate",
+    "raw_query": "Seoul K-culture and food, $2200 couple, winter 2026 from LAX"
+  }
+}
