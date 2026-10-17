@@ -1,15 +1,14 @@
 {
   "provenance": {
-    "doc": "Expected values for the post-fix (v1.3) Voyager replay benchmark, checked by scripts/compare_results.py.",
+    "doc": "Expected values for the v1.4 Voyager replay benchmark, checked by scripts/compare_results.py.",
     "inventory_mode": "replay",
     "benchmark_command": "python scripts/benchmark_queries.py --mode compare --inventory replay --query-count 12",
     "source_dirs": [
-      "results/v1.3/run1",
-      "results/v1.3/run2",
-      "results/v1.3/run3"
+      "results/v1.4/run1",
+      "results/v1.4/run2"
     ],
-    "derived_on": "2026-10-03",
-    "derivation": "Post-fix reference (Round 3 routes through CONFLICT_RESOLVER). Expected = midpoint of the three post-fix runs; tolerances are tight bands around the three identical aggregates. Detection counts are banded for temperature-0 variance (location_mismatch detections varied 16-18 across pre/post runs); introductions are banded 0-0.1/query (the weather route remains theoretically possible). Tolerance 0 marks fixture-resolution invariants.",
+    "derived_on": "2026-10-16",
+    "derivation": "v1.4 reference. Intent and experience lists are replayed from fixtures, so two consecutive runs produced identical run summaries and per-query results (results/v1.4/run1, run2). Expected = that result. Aggregate tolerance bands are kept from v1.3 as a guard; per-query checks are exact. Tolerance 0 marks fixture-resolution invariants.",
     "tolerance_rationale": "Replay decoding is pinned to temperature 0, but a small fraction of runs still differ on rule-level metrics because Claude at temperature 0 is not bit-deterministic across API calls (residual LLM API variance; see TESTING.md, 'Residual variance').",
     "query_count": 24,
     "queries": 12
