@@ -2,9 +2,9 @@
 
 ## Summary
 
-v1.4 introduces deterministic replay for LLM-backed agents (intent parser and experience agent). Intent and experiences are now recorded in fixtures during capture, enabling bit-identical replay runs.
+v1.4 introduces deterministic replay for LLM-backed agents (intent parser and experience agent). Intent and experiences are now recorded in fixtures during capture, enabling replay runs with identical Round-1 conflict types and final counts.
 
-**Key Achievement**: Two consecutive replay runs produced identical results on all 24 query pairs (12 queries × 2 modes).
+**Key Achievement**: Two consecutive replay runs produced identical conflict detection and resolution outcomes on all 24 query pairs (12 queries × 2 modes).
 
 ## What Changed from v1.3
 
@@ -15,13 +15,13 @@ v1.4 introduces deterministic replay for LLM-backed agents (intent parser and ex
 
 ## Results
 
-The numbers differ from v1.3 because the experience list is now one recorded sample instead of regenerated each run:
+The aggregate metrics differ slightly from v1.3 because v1.3 regenerated the experience list and intent on each run (causing variance), while v1.4 records them once during capture and replays the same outputs:
 
 - **unsatisfiable_constraint_rate_pct**: 64% → 67%
 - **baseline conflicts**: 1.28 → 1.25 (all rounds)
 - **location_mismatch detections**: 17 → 16 total, baseline 9 → 8
 
-All other aggregate metrics remained within tolerance. Per-query conflict counts are identical between runs, with q0 (Greece) no longer requiring tolerance - the timing_inefficiency variance that appeared/disappeared in v1.3 is now fixed by recording intent.
+All other aggregate metrics remained within tolerance. Per-query conflict counts are identical between v1.4 runs, with q0 (Greece) no longer requiring tolerance - the variance that caused timing_inefficiency conflicts to appear/disappear in v1.3 is eliminated by recording both intent and experiences.
 
 ## Reproducibility
 
@@ -29,7 +29,7 @@ All other aggregate metrics remained within tolerance. Per-query conflict counts
 python3 scripts/benchmark_queries.py --mode compare --inventory replay --query-count 12
 ```
 
-Run1 and Run2 produced byte-identical `conflicts_by_round.csv` and `conflict_lifecycle.csv` files, and numerically identical `run_summary.json` values (24 query pairs, mean_final_conflicts=1.17, resolution_rate=10%).
+Run1 and Run2 produced identical conflict types and counts: `conflicts_by_round.csv` and `conflict_lifecycle.csv` match except for session IDs, and `run_summary.json` values are numerically identical (24 query pairs, mean_final_conflicts=1.17, resolution_rate=10%).
 
 ## Files
 

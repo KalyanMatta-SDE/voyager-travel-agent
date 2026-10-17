@@ -12,19 +12,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replay now records intent and experiences in fixtures for deterministic
   LLM-backed agent replay. Intent parser outputs recorded in
   `*_intent.json`, experience agent outputs in `*_experiences.json`.
-  Consecutive replay runs produce identical results on all 24 query pairs.
+  Consecutive replay runs produce identical Round-1 conflict types and
+  final counts on all 24 query pairs.
 - Timezone-independent replay anchor date (fixtures/live_inventory manifest)
   enables stable replay across timezones.
 - Research-round errors now recorded in state for proper replay behavior.
 
 ### Changed
 
-- benchmarks/expected_replay.json updated from v1.4 replay run: experience
-  list is now one recorded sample instead of regenerated, so aggregate
-  metrics differ slightly from v1.3 (unsatisfiable_constraint_rate_pct
-  64% → 67%, baseline conflicts 1.28 → 1.25).
-- Per-query tolerance removed: q0 timing_inefficiency variance fixed by
-  recording intent.
+- benchmarks/expected_replay.json updated from v1.4 replay run: aggregate
+  metrics differ slightly from v1.3 because v1.3 regenerated intent and
+  experiences on each run while v1.4 records them once during capture
+  (unsatisfiable_constraint_rate_pct 64% → 67%, baseline conflicts
+  1.28 → 1.25).
+- Per-query tolerance removed: q0 variance eliminated by recording both
+  intent and experiences instead of regenerating them.
 
 ### Fixed
 
